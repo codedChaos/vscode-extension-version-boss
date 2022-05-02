@@ -8,7 +8,7 @@
 ## [1.4.67]
 
 - [`Fix`] Fix for some JavaScript declarations.
-- [`Feature`] Added some options to optimize informations in Copyrigths Infos Array: now is possible to insert Main Author and its E-mail address in two seprate fields, is possible to add fileVersion and appName (see Settings of Version Boss & MonsterDoc), output of `Authors Names and E-mails` item is now an array;
+- [`Feature`] Added some options to optimize informations in Copyrights Infos Array: now is possible to insert Main Author and its E-mail address in two seprate fields, is possible to add fileVersion and appName (see Settings of Version Boss & MonsterDoc), output of `Authors Names and E-mails` item is now an array;
 - [`Settings`] **WARNING!** Changed some **Settings**: now several fields are an array of strings instead a complex string: **you must comment all `Version Boss & MonsterDoc` variables in `settings.ini` and set them from Settings Panel.**;
 - [`Development`] Error Messages can be displayed in UI language of VScode (at this moment only `english` and `italian`).
 - [`Feature`] Now `README.md` has `Table of Contents` automatically generated.

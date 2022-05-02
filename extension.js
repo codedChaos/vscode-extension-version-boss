@@ -1,7 +1,7 @@
 /*
 <!#CR>
 ************************************************************************************************************************
-*                                                    Copyrigths ©                                                      *
+*                                                    Copyrights ©                                                      *
 * -------------------------------------------------------------------------------------------------------------------- *
 *      Authors Names And Emails > Nicola Granata <info@daemoncms.com>                                                  *
 *      Company Name             > ActiveShade di Nicola Granata                                                        *
@@ -1884,7 +1884,7 @@ function vboss_versioning(registered_command, root_item, semver_boss_command, st
 			typeof (ai_value) == "object" ? ai_value = ai_value.join(comma): vz = 0;
 			copyrights_tmp_ra.push([(camelToLabel(String(i))).trim(), ai_value, ""]);
 		}
-		// Gestisce tutte le voci COPYRIGTHS delle impostazioni
+		// Gestisce tutte le voci Copyrights delle impostazioni
 		for (i in copyrights_tmp_ra) {
 			copyrights_item_label = copyrights_tmp_ra[i][0];
 			copyrights_item_value = String(copyrights_tmp_ra[i][1]).trim();
@@ -1937,20 +1937,20 @@ function vboss_versioning(registered_command, root_item, semver_boss_command, st
 		if (added_infos_str != "") {
 			copyrights_str += added_infos_str;
 		}
-		var copyrigths_extension_author_credits_str = "";
+		var Copyrights_extension_author_credits_str = "";
 		if (settings_obj[root_item + ".settings." + semver_boss_command + ".insertExtensionAuthorCredits"]) {
 			//console.log(defaults_obj);
 			var versionboss_author_copyrights_label = space_char + "VSCode Extension: " + app_name + space_char;
 			//versionboss_author_copyrights_label +=  + "by" + space_char + package_obj.author.name + space_char;
 			var versionboss_author_copyrights_value = "";
-			var copyrigths_extension_author_credits_non_empty_left_right_char = "-";
-			var copyrigths_extension_author_credits_to_fill = copyrights_top_bottom_row;
+			var Copyrights_extension_author_credits_non_empty_left_right_char = "-";
+			var Copyrights_extension_author_credits_to_fill = copyrights_top_bottom_row;
 			var add_left_frame_char = "";
 			if (copyrights_left_and_right_frame_char == "") {
 				add_left_frame_char = left_frame_first_char + space_char;
 			}
-			copyrigths_extension_author_credits_str = vboss_row_fill(versionboss_author_copyrights_label, versionboss_author_copyrights_value, copyrigths_extension_author_credits_to_fill, copyrights_fill_chars, copyrights_label_value_separator_char, versionboss_author_copyrights_label.length, versionboss_author_copyrights_value.length, copyrights_top_and_bottom_frame_char, copyrigths_extension_author_credits_non_empty_left_right_char, space_char, sections_header_separator_chars, false, eol);
-			copyrigths_extension_author_credits_str = add_left_frame_char + copyrigths_extension_author_credits_str;
+			Copyrights_extension_author_credits_str = vboss_row_fill(versionboss_author_copyrights_label, versionboss_author_copyrights_value, Copyrights_extension_author_credits_to_fill, copyrights_fill_chars, copyrights_label_value_separator_char, versionboss_author_copyrights_label.length, versionboss_author_copyrights_value.length, copyrights_top_and_bottom_frame_char, Copyrights_extension_author_credits_non_empty_left_right_char, space_char, sections_header_separator_chars, false, eol);
+			Copyrights_extension_author_credits_str = add_left_frame_char + Copyrights_extension_author_credits_str;
 		}
 
 		if (copyrights_left_and_right_frame_char != "") {
@@ -1958,7 +1958,7 @@ function vboss_versioning(registered_command, root_item, semver_boss_command, st
 		} else {
 			copyrights_str = left_frame_first_char + space_char + (copyrights_str.split(eol).slice(0, -1)).join(eol + left_frame_first_char + space_char) + eol;
 		}
-		copyrights_str += copyrigths_extension_author_credits_str;
+		copyrights_str += Copyrights_extension_author_credits_str;
 		copyrights_str += cols_count;
 		var copyrights_str_full = cr_begin + eol + copyrights_str + cr_end + eol;
 
@@ -2883,14 +2883,14 @@ function monsterdoc_maker(editor, selection, settings_obj, root_item, semver_bos
 	if (!bool_is_already_a_dockblock) {
 		try {
 			//console.log( copyrights_local_obj );
-			//var copyrigths_authors_info = copyrights_authorsNamesAndEmails + " <" + copyrights_authorsEmail + ">";
+			//var Copyrights_authors_info = copyrights_authorsNamesAndEmails + " <" + copyrights_authorsEmail + ">";
 			var copyrights_authorsNamesAndEmails_tmp = copyrights_local_obj["authorsNamesAndEmails"];
 			var copyrights_authorsNamesAndEmails_obj = make_autors_names_and_emails(copyrights_authorsNamesAndEmails_tmp);
-			var copyrigths_authors_info = [];
+			var Copyrights_authors_info = [];
 			if (monsterdoc_local_obj["insertAllAuthorsInDocumentation"]) {
-				copyrigths_authors_info = copyrights_authorsNamesAndEmails_obj["authorsNamesAndEmails"];
+				Copyrights_authors_info = copyrights_authorsNamesAndEmails_obj["authorsNamesAndEmails"];
 			} else {
-				copyrigths_authors_info = [copyrights_authorsNamesAndEmails_obj["main_author"]];
+				Copyrights_authors_info = [copyrights_authorsNamesAndEmails_obj["main_author"]];
 			}
 			// var copyrights_names = copyrights_authorsNamesAndEmails_obj[ "copyrights_names" ].join( ", " );
 
@@ -3222,9 +3222,9 @@ function monsterdoc_maker(editor, selection, settings_obj, root_item, semver_bos
 				if (monsterdoc_local_obj["addAuthorsInfos"] == true) {
 					//var copyrights_authorsNamesAndEmails = copyrights_local_obj[ "authorsNames" ];
 					//var copyrights_authorsEmail = copyrights_local_obj[ "authorsEmail" ];
-					//var copyrigths_authors_info = copyrights_authorsNamesAndEmails + " <" + copyrights_authorsEmail + ">";
-					for (var i in copyrigths_authors_info) {
-						documentation_obj["copyrights"] += add_tab + pre_tabs + start_row + monsterdoc_keywords_obj["@author"] + copyrigths_authors_info[i] + eol;
+					//var Copyrights_authors_info = copyrights_authorsNamesAndEmails + " <" + copyrights_authorsEmail + ">";
+					for (var i in Copyrights_authors_info) {
+						documentation_obj["copyrights"] += add_tab + pre_tabs + start_row + monsterdoc_keywords_obj["@author"] + Copyrights_authors_info[i] + eol;
 					}
 				}
 				if (monsterdoc_local_obj["addCopyrightsInfos"]) {

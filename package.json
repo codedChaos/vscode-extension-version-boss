@@ -891,7 +891,7 @@
 					"default": "CR",
 					"minLength": 1,
 					"maxLength": 16,
-					"markdownDescription": "String to recognize or insert File Copyrights boundaries and values.\r\n\r\n***Note***:\r\n\r\nfor preserve data manually inserted in Copyrights block, system prevent to update it accidentally by pressing shortcuts. You have to delete the Copyrigths block to inserert new data (at least, if you want to leave old data for your convenience, delete only the boundaries tags <!#CR#!> and </#CR#/>). This is not valid for all other infos (even in Copirights block) wich is enclosed in boundaries (e.g. File Version, File Mod Time are ever updated,  Licensing only on pressing shortcuts)."
+					"markdownDescription": "String to recognize or insert File Copyrights boundaries and values.\r\n\r\n***Note***:\r\n\r\nfor preserve data manually inserted in Copyrights block, system prevent to update it accidentally by pressing shortcuts. You have to delete the Copyrights block to inserert new data (at least, if you want to leave old data for your convenience, delete only the boundaries tags <!#CR#!> and </#CR#/>). This is not valid for all other infos (even in Copirights block) wich is enclosed in boundaries (e.g. File Version, File Mod Time are ever updated,  Licensing only on pressing shortcuts)."
 				},
 				"versionBoss.boundaries.dataStringIDs.licenses": {
 					"type": "string",
@@ -928,7 +928,7 @@
 				},
 				"versionBoss.settings.copyrights.copyrightsHeader": {
 					"type": "string",
-					"default": "Copyrigths ©",
+					"default": "Copyrights ©",
 					"markdownDescription": "Header of Copyrights box."
 				},
 				"versionBoss.settings.copyrights.fileAndLicensesInfosHeader": {

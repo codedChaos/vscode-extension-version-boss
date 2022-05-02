@@ -80,7 +80,7 @@ Versioning and Documenting like a Boss - Semantic Versioner and PHPDoc / JSDoc /
 > Note: [`Development`] sections in *Changelog* are addressed to the developer to remind him of any important changes that occurred during the writing of the code and do not always concern improvements made to the extension or to the theme.
 
 - [`Fix`] Fix for some JavaScript declarations.
-- [`Feature`] Added some options to optimize informations in Copyrigths Infos Array: now is possible to insert Main Author and its E-mail address in two seprate fields, is possible to add fileVersion and appName (see Settings of Version Boss & MonsterDoc), output of `Authors Names and E-mails` item is now an array;
+- [`Feature`] Added some options to optimize informations in Copyrights Infos Array: now is possible to insert Main Author and its E-mail address in two seprate fields, is possible to add fileVersion and appName (see Settings of Version Boss & MonsterDoc), output of `Authors Names and E-mails` item is now an array;
 - [`Settings`] **WARNING!** Changed some **Settings**: now several fields are an array of strings instead a complex string: **you must comment all `Version Boss & MonsterDoc` variables in `settings.ini` and set them from Settings Panel.**;
 - [`Development`] Error Messages can be displayed in UI language of VScode (at this moment only `english` and `italian`).
 - [`Feature`] Now `README.md` has `Table of Contents` automatically generated.
@@ -602,7 +602,7 @@ e.g. `<` and `>` in `<!#FV>`1.23.45`</#FV>`.
 
 ***Note***:
 
-for preserve data manually inserted in Copyrights block, system prevent to update it accidentally by pressing shortcuts. You have to delete the Copyrigths block to inserert new data (at least, if you want to leave old data for your convenience, delete only the boundaries tags <!#CR#!> and </#CR#/>). This is not valid for all other infos (even in Copirights block) wich is enclosed in boundaries (e.g. File Version, File Mod Time are ever updated,  Licensing only on pressing shortcuts).
+for preserve data manually inserted in Copyrights block, system prevent to update it accidentally by pressing shortcuts. You have to delete the Copyrights block to inserert new data (at least, if you want to leave old data for your convenience, delete only the boundaries tags <!#CR#!> and </#CR#/>). This is not valid for all other infos (even in Copirights block) wich is enclosed in boundaries (e.g. File Version, File Mod Time are ever updated,  Licensing only on pressing shortcuts).
 
 > `versionBoss.boundaries.dataStringIDs.copyrights` [type: `string`] 
 ---
